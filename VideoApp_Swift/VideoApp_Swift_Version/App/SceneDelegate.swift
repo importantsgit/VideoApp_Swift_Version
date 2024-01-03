@@ -1,0 +1,22 @@
+//
+//  SceneDelegate.swift
+//  VideoApp_Swift_Version
+//
+//  Created by 이재훈 on 2024/01/03.
+//
+
+import UIKit
+
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+        window?.backgroundColor = .black
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+    }
+}
+
