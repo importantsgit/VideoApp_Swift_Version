@@ -186,22 +186,27 @@ class PlayerView: UIView {
         }
     }
     
+    func stop(){
+        player?.replaceCurrentItem(with: nil)
+    }
+
+    
     func pause() {
         player?.pause()
         self.sendPlayerStateEvent(event: .PAUSE, param: nil)
     }
     
     // 10초 전으로 이동
-    func seekForRewindInVideo(skipSecond: Float64) {
+    func seekRewindInVideo(skipSeconds: Float64) {
         
     }
     
     // 10초 후로 이동
-    func seekForForwardInVideo(skipSecond: Float64) {
+    func seekForwardInVideo(skipSeconds: Float64) {
         
     }
     
-    func seekForPlay(ratioPosition: Float) {
+    func seekToPlay(ratioPosition: Float) {
         
     }
     

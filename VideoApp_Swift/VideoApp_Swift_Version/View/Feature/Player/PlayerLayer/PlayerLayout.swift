@@ -45,7 +45,51 @@ class PlayerLayout: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func startPlayer(playerController: UIView, urlString: String) {
-        
+    func startPlayer(playerController: UIView, urlString: String){
+        playerView?.startPlayer(controlContainer: self, urlString: urlString)
+    }
+    
+     func audioBackgroundEvent(){
+         playerView?.audioBackgroundEvent()
+     }
+     
+     func audioForegroundEvent(){
+         playerView?.audioForegroundEvent()
+     }
+     
+    func activatePipMode(delegate: AVPictureInPictureControllerDelegate, isActive: Bool){
+        playerView?.activatePipMode(delegate: delegate, isPIPActive: isActive)
+     }
+    
+    func play() {
+        playerView?.play()
+    }
+    
+    func pause() {
+        playerView?.pause()
+    }
+    
+    func stop(){
+        playerView?.stop()
+    }
+    
+    func getPlayerStatus() -> AVPlayer.TimeControlStatus?{
+        return playerView?.getPlayerStatus()
+    }
+    
+    func seekToPlay(ratioPosition: Float){
+        playerView?.seekToPlay(ratioPosition: ratioPosition)
+    }
+    
+    func seekToTime(time: CMTime){
+        playerView?.seekToTime(time: time)
+    }
+    
+    func seekRewindInVideo(skipSeconds: Float64) {
+        playerView?.seekRewindInVideo(skipSeconds: skipSeconds)
+    }
+    
+    func seekForwardInVideo(skipSeconds: Float64) {
+        playerView?.seekForwardInVideo(skipSeconds: skipSeconds)
     }
 }

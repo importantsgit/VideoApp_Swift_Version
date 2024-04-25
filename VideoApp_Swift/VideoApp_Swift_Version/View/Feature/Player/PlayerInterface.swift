@@ -16,12 +16,26 @@ public protocol PlayerInterfaceDelegate {
 }
 
 public class PlayerInterface {
-    var interfaceDelegate: PlayerInterfaceDelegate?
+    var delegate: PlayerInterfaceDelegate?
     
     var player: AVPlayer?
     var playerLayer: AVPlayerLayer?
     var pipController: AVPictureInPictureController?
     
     var playerContainer: PlayerContainer?
+    
+    public func setDelegate(delegate: PlayerInterfaceDelegate) {
+        self.delegate = delegate
+    }
+    
+    public func setPlayerContainer(container: UIView){
+        if playerContainer == nil{
+            playerContainer = PlayerContainer()
+            playerContainer?.setIntefaceDelegate(delegate: self.delegate)
+        }
+        container.addSubview(playerContainer!)
+        playerContainer!.frame = container.bounds
+        playerContainer!.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+    }
     
 }

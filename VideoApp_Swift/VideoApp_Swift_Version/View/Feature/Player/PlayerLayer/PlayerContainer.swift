@@ -28,12 +28,71 @@ class PlayerContainer: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        initPlayerView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init has not been implemented")
     }
     
+    func setIntefaceDelegate(delegate: PlayerInterfaceDelegate?){
+        self.playerInterfaceDelegate = delegate
+    }
+    
+    func initPlayerView(){
+        if playerLayout == nil{
+            playerLayout = PlayerLayout()
+        }
+        
+        self.addSubview(playerLayout!)
+        playerLayout!.frame = self.bounds
+        playerLayout!.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        
+        playerLayout?.setPlayerStateEventHandler(eventHandler: {
+            [weak self] event, param in
+            
+            switch event {
+            case .ENDED:
+                if self?.portraitControlContainer != nil{
+                    
+                }
+                if self?.portraitControlContainer != nil{
+                    
+                }
+                break
+            case .PLAYER_POSITION:
+                if self?.portraitControlContainer != nil{
+                    
+                }
+                if self?.landscapeControlContainer != nil{
+                    
+                }
+                break
+            case .PLAY:
+                if self?.portraitControlContainer != nil{
+                    
+                }
+                if self?.landscapeControlContainer != nil{
+                    
+                }
+                break
+            case .PAUSE:
+                if self?.portraitControlContainer != nil{
+                    
+                }
+                if self?.landscapeControlContainer != nil{
+                    
+                }
+                break
+            default:
+                break
+            }
+        })
+    }
+    
+    func startPlayer(urlString: String, title: String){
+        playerLayout?.startPlayer(playerController: self, urlString: urlString)
+    }
     
     
 }
