@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B968A9F2BDA368700B0D755 /* PlayerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */; };
+		7B968AA12BDA36F800B0D755 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA02BDA36F800B0D755 /* PlayerView.swift */; };
+		7B968AA52BDA38E800B0D755 /* BaseControlContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */; };
+		7B968AA72BDA397000B0D755 /* LandscapeControlContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA62BDA397000B0D755 /* LandscapeControlContainer.swift */; };
+		7B968AA92BDA398200B0D755 /* PortraitControlContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA82BDA398200B0D755 /* PortraitControlContainer.swift */; };
+		7B968AAF2BDA3A7A00B0D755 /* PortraitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AAE2BDA3A7A00B0D755 /* PortraitController.swift */; };
+		7B968AB12BDA3A8600B0D755 /* LandscapeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AB02BDA3A8600B0D755 /* LandscapeController.swift */; };
+		7B968AB32BDA3AA400B0D755 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AB22BDA3AA400B0D755 /* BaseController.swift */; };
+		7B968AB52BDA3E1400B0D755 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AB42BDA3E1400B0D755 /* Gesture.swift */; };
 		7BC2FEEE2B44DBBA00CBEBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEED2B44DBBA00CBEBDD /* AppDelegate.swift */; };
 		7BC2FEF02B44DBBA00CBEBDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEEF2B44DBBA00CBEBDD /* SceneDelegate.swift */; };
 		7BC2FEF22B44DBBA00CBEBDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEF12B44DBBA00CBEBDD /* ViewController.swift */; };
@@ -22,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLayout.swift; sourceTree = "<group>"; };
+		7B968AA02BDA36F800B0D755 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControlContainerView.swift; sourceTree = "<group>"; };
+		7B968AA62BDA397000B0D755 /* LandscapeControlContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeControlContainer.swift; sourceTree = "<group>"; };
+		7B968AA82BDA398200B0D755 /* PortraitControlContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitControlContainer.swift; sourceTree = "<group>"; };
+		7B968AAE2BDA3A7A00B0D755 /* PortraitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitController.swift; sourceTree = "<group>"; };
+		7B968AB02BDA3A8600B0D755 /* LandscapeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeController.swift; sourceTree = "<group>"; };
+		7B968AB22BDA3AA400B0D755 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		7B968AB42BDA3E1400B0D755 /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
 		7BC2FEEA2B44DBBA00CBEBDD /* VideoApp_Swift_Version.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoApp_Swift_Version.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC2FEED2B44DBBA00CBEBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC2FEEF2B44DBBA00CBEBDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +93,53 @@
 				7BC2FF012B44DC6D00CBEBDD /* Feature */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7B968AA22BDA375600B0D755 /* PlayerLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7BC2FF1E2B44E7F500CBEBDD /* PlayerContainer.swift */,
+				7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */,
+				7B968AA02BDA36F800B0D755 /* PlayerView.swift */,
+			);
+			path = PlayerLayer;
+			sourceTree = "<group>";
+		};
+		7B968AA32BDA376700B0D755 /* ControllerLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7B968AAC2BDA3A4F00B0D755 /* Base */,
+				7B968AAB2BDA3A3500B0D755 /* Portrait */,
+				7B968AAA2BDA3A2F00B0D755 /* Landscape */,
+			);
+			path = ControllerLayer;
+			sourceTree = "<group>";
+		};
+		7B968AAA2BDA3A2F00B0D755 /* Landscape */ = {
+			isa = PBXGroup;
+			children = (
+				7B968AA62BDA397000B0D755 /* LandscapeControlContainer.swift */,
+				7B968AB02BDA3A8600B0D755 /* LandscapeController.swift */,
+			);
+			path = Landscape;
+			sourceTree = "<group>";
+		};
+		7B968AAB2BDA3A3500B0D755 /* Portrait */ = {
+			isa = PBXGroup;
+			children = (
+				7B968AA82BDA398200B0D755 /* PortraitControlContainer.swift */,
+				7B968AAE2BDA3A7A00B0D755 /* PortraitController.swift */,
+			);
+			path = Portrait;
+			sourceTree = "<group>";
+		};
+		7B968AAC2BDA3A4F00B0D755 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */,
+				7B968AB22BDA3AA400B0D755 /* BaseController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		7BC2FEE12B44DBBA00CBEBDD = {
@@ -176,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				7BC2FF072B44DD0300CBEBDD /* PlayerEvent.swift */,
+				7B968AB42BDA3E1400B0D755 /* Gesture.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -183,26 +249,11 @@
 		7BC2FF172B44E30E00CBEBDD /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				7BC2FF1E2B44E7F500CBEBDD /* PlayerContainer.swift */,
 				7BC2FF192B44E35000CBEBDD /* PlayerInterface.swift */,
-				7BC2FF1B2B44E79600CBEBDD /* PlayerLayer */,
-				7BC2FF182B44E31900CBEBDD /* ControllerLayer */,
+				7B968AA32BDA376700B0D755 /* ControllerLayer */,
+				7B968AA22BDA375600B0D755 /* PlayerLayer */,
 			);
 			path = Player;
-			sourceTree = "<group>";
-		};
-		7BC2FF182B44E31900CBEBDD /* ControllerLayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ControllerLayer;
-			sourceTree = "<group>";
-		};
-		7BC2FF1B2B44E79600CBEBDD /* PlayerLayer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PlayerLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,12 +327,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC2FF1F2B44E7F900CBEBDD /* PlayerContainer.swift in Sources */,
+				7B968AB12BDA3A8600B0D755 /* LandscapeController.swift in Sources */,
 				7BC2FF112B44DE2F00CBEBDD /* UIView+Extension.swift in Sources */,
 				7BC2FF1A2B44E35000CBEBDD /* PlayerInterface.swift in Sources */,
+				7B968AA92BDA398200B0D755 /* PortraitControlContainer.swift in Sources */,
+				7B968AA52BDA38E800B0D755 /* BaseControlContainerView.swift in Sources */,
+				7B968AA12BDA36F800B0D755 /* PlayerView.swift in Sources */,
+				7B968A9F2BDA368700B0D755 /* PlayerLayout.swift in Sources */,
+				7B968AB52BDA3E1400B0D755 /* Gesture.swift in Sources */,
+				7B968AA72BDA397000B0D755 /* LandscapeControlContainer.swift in Sources */,
 				7BC2FEF22B44DBBA00CBEBDD /* ViewController.swift in Sources */,
+				7B968AB32BDA3AA400B0D755 /* BaseController.swift in Sources */,
 				7BC2FEEE2B44DBBA00CBEBDD /* AppDelegate.swift in Sources */,
 				7BC2FF0F2B44DDFA00CBEBDD /* UIButton+Util.swift in Sources */,
 				7BC2FF132B44E24400CBEBDD /* CMTime+Extension.swift in Sources */,
+				7B968AAF2BDA3A7A00B0D755 /* PortraitController.swift in Sources */,
 				7BC2FEF02B44DBBA00CBEBDD /* SceneDelegate.swift in Sources */,
 				7BC2FF082B44DD0300CBEBDD /* PlayerEvent.swift in Sources */,
 				7BC2FF162B44E28E00CBEBDD /* AVPlayer+Extension.swift in Sources */,
