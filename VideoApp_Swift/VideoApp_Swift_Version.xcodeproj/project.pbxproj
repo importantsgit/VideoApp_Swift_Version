@@ -18,6 +18,7 @@
 		7BC2FF132B44E24400CBEBDD /* CMTime+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FF122B44E24400CBEBDD /* CMTime+Extension.swift */; };
 		7BC2FF162B44E28E00CBEBDD /* AVPlayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FF152B44E28E00CBEBDD /* AVPlayer+Extension.swift */; };
 		7BC2FF1A2B44E35000CBEBDD /* PlayerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FF192B44E35000CBEBDD /* PlayerInterface.swift */; };
+		7BC2FF1F2B44E7F900CBEBDD /* PlayerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FF1E2B44E7F500CBEBDD /* PlayerContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7BC2FF122B44E24400CBEBDD /* CMTime+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime+Extension.swift"; sourceTree = "<group>"; };
 		7BC2FF152B44E28E00CBEBDD /* AVPlayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Extension.swift"; sourceTree = "<group>"; };
 		7BC2FF192B44E35000CBEBDD /* PlayerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInterface.swift; sourceTree = "<group>"; };
+		7BC2FF1E2B44E7F500CBEBDD /* PlayerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B968A9B2BDA32A600B0D755 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7BC2FF102B44DE2F00CBEBDD /* UIView+Extension.swift */,
+				7BC2FF122B44E24400CBEBDD /* CMTime+Extension.swift */,
+				7BC2FF152B44E28E00CBEBDD /* AVPlayer+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7B968A9C2BDA32C400B0D755 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7BC2FEF62B44DBBB00CBEBDD /* Assets.xcassets */,
+				7BC2FEF82B44DBBB00CBEBDD /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7B968A9D2BDA330400B0D755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BC2FEF12B44DBBA00CBEBDD /* ViewController.swift */,
+				7BC2FF012B44DC6D00CBEBDD /* Feature */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7BC2FEE12B44DBBA00CBEBDD = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +99,11 @@
 				7BC2FF052B44DCD200CBEBDD /* App */,
 				7BC2FF022B44DC7800CBEBDD /* Core */,
 				7BC2FF032B44DC7D00CBEBDD /* Model */,
-				7BC2FF012B44DC6D00CBEBDD /* Feature */,
-				7BC2FEF12B44DBBA00CBEBDD /* ViewController.swift */,
-				7BC2FEF62B44DBBB00CBEBDD /* Assets.xcassets */,
-				7BC2FEF82B44DBBB00CBEBDD /* LaunchScreen.storyboard */,
+				7B968A9D2BDA330400B0D755 /* View */,
+				7BC2FF092B44DD2900CBEBDD /* Define */,
+				7BC2FF0A2B44DD2E00CBEBDD /* Util */,
+				7B968A9B2BDA32A600B0D755 /* Extension */,
+				7B968A9C2BDA32C400B0D755 /* Resource */,
 				7BC2FEFB2B44DBBB00CBEBDD /* Info.plist */,
 			);
 			path = VideoApp_Swift_Version;
@@ -90,9 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				7BC2FF0B2B44DD3400CBEBDD /* Service */,
-				7BC2FF0A2B44DD2E00CBEBDD /* Extension */,
-				7BC2FF0D2B44DDC100CBEBDD /* Util */,
-				7BC2FF092B44DD2900CBEBDD /* Define */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -129,14 +157,12 @@
 			path = Define;
 			sourceTree = "<group>";
 		};
-		7BC2FF0A2B44DD2E00CBEBDD /* Extension */ = {
+		7BC2FF0A2B44DD2E00CBEBDD /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				7BC2FF102B44DE2F00CBEBDD /* UIView+Extension.swift */,
-				7BC2FF122B44E24400CBEBDD /* CMTime+Extension.swift */,
-				7BC2FF152B44E28E00CBEBDD /* AVPlayer+Extension.swift */,
+				7BC2FF0E2B44DDFA00CBEBDD /* UIButton+Util.swift */,
 			);
-			path = Extension;
+			path = Util;
 			sourceTree = "<group>";
 		};
 		7BC2FF0B2B44DD3400CBEBDD /* Service */ = {
@@ -154,28 +180,29 @@
 			path = Player;
 			sourceTree = "<group>";
 		};
-		7BC2FF0D2B44DDC100CBEBDD /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				7BC2FF0E2B44DDFA00CBEBDD /* UIButton+Util.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		7BC2FF172B44E30E00CBEBDD /* Player */ = {
 			isa = PBXGroup;
 			children = (
-				7BC2FF182B44E31900CBEBDD /* Controller */,
+				7BC2FF1E2B44E7F500CBEBDD /* PlayerContainer.swift */,
 				7BC2FF192B44E35000CBEBDD /* PlayerInterface.swift */,
+				7BC2FF1B2B44E79600CBEBDD /* PlayerLayer */,
+				7BC2FF182B44E31900CBEBDD /* ControllerLayer */,
 			);
 			path = Player;
 			sourceTree = "<group>";
 		};
-		7BC2FF182B44E31900CBEBDD /* Controller */ = {
+		7BC2FF182B44E31900CBEBDD /* ControllerLayer */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controller;
+			path = ControllerLayer;
+			sourceTree = "<group>";
+		};
+		7BC2FF1B2B44E79600CBEBDD /* PlayerLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC2FF1F2B44E7F900CBEBDD /* PlayerContainer.swift in Sources */,
 				7BC2FF112B44DE2F00CBEBDD /* UIView+Extension.swift in Sources */,
 				7BC2FF1A2B44E35000CBEBDD /* PlayerInterface.swift in Sources */,
 				7BC2FEF22B44DBBA00CBEBDD /* ViewController.swift in Sources */,
