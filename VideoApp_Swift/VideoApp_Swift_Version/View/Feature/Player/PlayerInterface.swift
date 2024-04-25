@@ -21,4 +21,7 @@ public class PlayerInterface {
     var player: AVPlayer?
     var playerLayer: AVPlayerLayer?
     var pipController: AVPictureInPictureController?
+    
+    var playerContainer: PlayerContainer?
+    
 }
