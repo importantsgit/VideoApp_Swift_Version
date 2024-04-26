@@ -94,5 +94,14 @@ class PlayerContainer: UIView {
         playerLayout?.startPlayer(playerController: self, urlString: urlString)
     }
     
+    func setPortrait() {
+        
+    }
+    
+    func setLandscape() {
+        
+    }
+    
+    
     
 }

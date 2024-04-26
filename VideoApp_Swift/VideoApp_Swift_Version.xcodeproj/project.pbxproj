@@ -17,6 +17,7 @@
 		7B82A01C2BDB39640029FF44 /* LandscapeAudioModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01B2BDB39640029FF44 /* LandscapeAudioModeController.swift */; };
 		7B82A01E2BDB39C50029FF44 /* BrightnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01D2BDB39C50029FF44 /* BrightnessController.swift */; };
 		7B82A0202BDB39E30029FF44 /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01F2BDB39E30029FF44 /* VolumeController.swift */; };
+		7B82A0232BDB3B2C0029FF44 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A0222BDB3B2C0029FF44 /* PlayerViewController.swift */; };
 		7B968A9F2BDA368700B0D755 /* PlayerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */; };
 		7B968AA12BDA36F800B0D755 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA02BDA36F800B0D755 /* PlayerView.swift */; };
 		7B968AA52BDA38E800B0D755 /* BaseControlContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */; };
@@ -28,7 +29,7 @@
 		7B968AB52BDA3E1400B0D755 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AB42BDA3E1400B0D755 /* Gesture.swift */; };
 		7BC2FEEE2B44DBBA00CBEBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEED2B44DBBA00CBEBDD /* AppDelegate.swift */; };
 		7BC2FEF02B44DBBA00CBEBDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEEF2B44DBBA00CBEBDD /* SceneDelegate.swift */; };
-		7BC2FEF22B44DBBA00CBEBDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEF12B44DBBA00CBEBDD /* ViewController.swift */; };
+		7BC2FEF22B44DBBA00CBEBDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEF12B44DBBA00CBEBDD /* MainViewController.swift */; };
 		7BC2FEF72B44DBBB00CBEBDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC2FEF62B44DBBB00CBEBDD /* Assets.xcassets */; };
 		7BC2FEFA2B44DBBB00CBEBDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC2FEF82B44DBBB00CBEBDD /* LaunchScreen.storyboard */; };
 		7BC2FF082B44DD0300CBEBDD /* PlayerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FF072B44DD0300CBEBDD /* PlayerEvent.swift */; };
@@ -46,6 +47,7 @@
 		7B82A01B2BDB39640029FF44 /* LandscapeAudioModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeAudioModeController.swift; sourceTree = "<group>"; };
 		7B82A01D2BDB39C50029FF44 /* BrightnessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessController.swift; sourceTree = "<group>"; };
 		7B82A01F2BDB39E30029FF44 /* VolumeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeController.swift; sourceTree = "<group>"; };
+		7B82A0222BDB3B2C0029FF44 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLayout.swift; sourceTree = "<group>"; };
 		7B968AA02BDA36F800B0D755 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControlContainerView.swift; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		7BC2FEEA2B44DBBA00CBEBDD /* VideoApp_Swift_Version.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoApp_Swift_Version.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC2FEED2B44DBBA00CBEBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC2FEEF2B44DBBA00CBEBDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BC2FEF12B44DBBA00CBEBDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BC2FEF12B44DBBA00CBEBDD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7BC2FEF62B44DBBB00CBEBDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC2FEF92B44DBBB00CBEBDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BC2FEFB2B44DBBB00CBEBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		7B82A0212BDB3B0C0029FF44 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7BC2FF172B44E30E00CBEBDD /* Player */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		7B968A9B2BDA32A600B0D755 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +139,7 @@
 		7B968A9D2BDA330400B0D755 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7BC2FEF12B44DBBA00CBEBDD /* ViewController.swift */,
+				7B82A0212BDB3B0C0029FF44 /* Component */,
 				7BC2FF012B44DC6D00CBEBDD /* Feature */,
 			);
 			path = View;
@@ -217,7 +227,8 @@
 		7BC2FF012B44DC6D00CBEBDD /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				7BC2FF172B44E30E00CBEBDD /* Player */,
+				7BC2FEF12B44DBBA00CBEBDD /* MainViewController.swift */,
+				7B82A0222BDB3B2C0029FF44 /* PlayerViewController.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -388,9 +399,10 @@
 				7B968A9F2BDA368700B0D755 /* PlayerLayout.swift in Sources */,
 				7B968AB52BDA3E1400B0D755 /* Gesture.swift in Sources */,
 				7B968AA72BDA397000B0D755 /* LandscapeControlContainer.swift in Sources */,
-				7BC2FEF22B44DBBA00CBEBDD /* ViewController.swift in Sources */,
+				7BC2FEF22B44DBBA00CBEBDD /* MainViewController.swift in Sources */,
 				7B968AB32BDA3AA400B0D755 /* BaseController.swift in Sources */,
 				7B82A0202BDB39E30029FF44 /* VolumeController.swift in Sources */,
+				7B82A0232BDB3B2C0029FF44 /* PlayerViewController.swift in Sources */,
 				7BC2FEEE2B44DBBA00CBEBDD /* AppDelegate.swift in Sources */,
 				7BC2FF0F2B44DDFA00CBEBDD /* UIButton+Util.swift in Sources */,
 				7BC2FF132B44E24400CBEBDD /* CMTime+Extension.swift in Sources */,
