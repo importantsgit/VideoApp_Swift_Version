@@ -8,6 +8,16 @@
 import UIKit
 
 class BaseController: NSObject {
-    private var view = UIView()
+    public var controllerView = UIView()
     private var contentType = PlayerContentType.UNKNOWN
+    
+    func setSingleTap(){
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(singleTap))
+        singleTap.numberOfTapsRequired = 1
+        singleTap.cancelsTouchesInView = false
+        controllerView.addGestureRecognizer(singleTap)
+    }
+    
+    // override
+    @objc func singleTap(gestureRecognizer : UITapGestureRecognizer) {}
 }
