@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7B82A00C2BDB35490029FF44 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A00B2BDB35490029FF44 /* RxBlocking */; };
-		7B82A00E2BDB35490029FF44 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A00D2BDB35490029FF44 /* RxCocoa */; };
-		7B82A0102BDB35490029FF44 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A00F2BDB35490029FF44 /* RxRelay */; };
-		7B82A0122BDB35490029FF44 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A0112BDB35490029FF44 /* RxSwift */; };
-		7B82A0142BDB35490029FF44 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A0132BDB35490029FF44 /* RxTest */; };
 		7B82A0162BDB35C00029FF44 /* PlayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A0152BDB35C00029FF44 /* PlayInfo.swift */; };
 		7B82A0192BDB39230029FF44 /* PortraitAudioModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A0182BDB39230029FF44 /* PortraitAudioModeController.swift */; };
 		7B82A01C2BDB39640029FF44 /* LandscapeAudioModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01B2BDB39640029FF44 /* LandscapeAudioModeController.swift */; };
@@ -29,6 +24,11 @@
 		7B968AB12BDA3A8600B0D755 /* LandscapeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AB02BDA3A8600B0D755 /* LandscapeController.swift */; };
 		7B968AB32BDA3AA400B0D755 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AB22BDA3AA400B0D755 /* BaseController.swift */; };
 		7B968AB52BDA3E1400B0D755 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AB42BDA3E1400B0D755 /* Gesture.swift */; };
+		7BADB4982BDB85E900E815C5 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 7BADB4972BDB85E900E815C5 /* RxBlocking */; };
+		7BADB49A2BDB85E900E815C5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7BADB4992BDB85E900E815C5 /* RxCocoa */; };
+		7BADB49C2BDB85E900E815C5 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 7BADB49B2BDB85E900E815C5 /* RxRelay */; };
+		7BADB49E2BDB85E900E815C5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7BADB49D2BDB85E900E815C5 /* RxSwift */; };
+		7BADB4A32BDB86AE00E815C5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB4A22BDB86AE00E815C5 /* NavigationBarView.swift */; };
 		7BC2FEEE2B44DBBA00CBEBDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEED2B44DBBA00CBEBDD /* AppDelegate.swift */; };
 		7BC2FEF02B44DBBA00CBEBDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEEF2B44DBBA00CBEBDD /* SceneDelegate.swift */; };
 		7BC2FEF22B44DBBA00CBEBDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2FEF12B44DBBA00CBEBDD /* MainViewController.swift */; };
@@ -61,6 +61,7 @@
 		7B968AB02BDA3A8600B0D755 /* LandscapeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeController.swift; sourceTree = "<group>"; };
 		7B968AB22BDA3AA400B0D755 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		7B968AB42BDA3E1400B0D755 /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
+		7BADB4A22BDB86AE00E815C5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		7BC2FEEA2B44DBBA00CBEBDD /* VideoApp_Swift_Version.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoApp_Swift_Version.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC2FEED2B44DBBA00CBEBDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC2FEEF2B44DBBA00CBEBDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,11 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B82A0142BDB35490029FF44 /* RxTest in Frameworks */,
-				7B82A0102BDB35490029FF44 /* RxRelay in Frameworks */,
-				7B82A00E2BDB35490029FF44 /* RxCocoa in Frameworks */,
-				7B82A0122BDB35490029FF44 /* RxSwift in Frameworks */,
-				7B82A00C2BDB35490029FF44 /* RxBlocking in Frameworks */,
+				7BADB49C2BDB85E900E815C5 /* RxRelay in Frameworks */,
+				7BADB49A2BDB85E900E815C5 /* RxCocoa in Frameworks */,
+				7BADB49E2BDB85E900E815C5 /* RxSwift in Frameworks */,
+				7BADB4982BDB85E900E815C5 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +116,7 @@
 		7B82A0212BDB3B0C0029FF44 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				7BADB4A12BDB869500E815C5 /* NavigationBar */,
 				7BC2FF172B44E30E00CBEBDD /* Player */,
 			);
 			path = Component;
@@ -195,6 +196,14 @@
 				7B968AB22BDA3AA400B0D755 /* BaseController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		7BADB4A12BDB869500E815C5 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				7BADB4A22BDB86AE00E815C5 /* NavigationBarView.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 		7BC2FEE12B44DBBA00CBEBDD = {
@@ -331,11 +340,10 @@
 			);
 			name = VideoApp_Swift_Version;
 			packageProductDependencies = (
-				7B82A00B2BDB35490029FF44 /* RxBlocking */,
-				7B82A00D2BDB35490029FF44 /* RxCocoa */,
-				7B82A00F2BDB35490029FF44 /* RxRelay */,
-				7B82A0112BDB35490029FF44 /* RxSwift */,
-				7B82A0132BDB35490029FF44 /* RxTest */,
+				7BADB4972BDB85E900E815C5 /* RxBlocking */,
+				7BADB4992BDB85E900E815C5 /* RxCocoa */,
+				7BADB49B2BDB85E900E815C5 /* RxRelay */,
+				7BADB49D2BDB85E900E815C5 /* RxSwift */,
 			);
 			productName = VideoApp_Swift_Version;
 			productReference = 7BC2FEEA2B44DBBA00CBEBDD /* VideoApp_Swift_Version.app */;
@@ -366,7 +374,7 @@
 			);
 			mainGroup = 7BC2FEE12B44DBBA00CBEBDD;
 			packageReferences = (
-				7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7BADB4962BDB85E900E815C5 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 7BC2FEEB2B44DBBA00CBEBDD /* Products */;
 			projectDirPath = "";
@@ -420,6 +428,7 @@
 				7BC2FF082B44DD0300CBEBDD /* PlayerEvent.swift in Sources */,
 				7B82A0272BDB40EF0029FF44 /* UIColor+Extension.swift in Sources */,
 				7B82A0192BDB39230029FF44 /* PortraitAudioModeController.swift in Sources */,
+				7BADB4A32BDB86AE00E815C5 /* NavigationBarView.swift in Sources */,
 				7BC2FF162B44E28E00CBEBDD /* AVPlayer+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,7 +641,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		7BADB4962BDB85E900E815C5 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -643,30 +652,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7B82A00B2BDB35490029FF44 /* RxBlocking */ = {
+		7BADB4972BDB85E900E815C5 /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 7BADB4962BDB85E900E815C5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
 		};
-		7B82A00D2BDB35490029FF44 /* RxCocoa */ = {
+		7BADB4992BDB85E900E815C5 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 7BADB4962BDB85E900E815C5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		7B82A00F2BDB35490029FF44 /* RxRelay */ = {
+		7BADB49B2BDB85E900E815C5 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 7BADB4962BDB85E900E815C5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
 		};
-		7B82A0112BDB35490029FF44 /* RxSwift */ = {
+		7BADB49D2BDB85E900E815C5 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 7BADB4962BDB85E900E815C5 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		7B82A0132BDB35490029FF44 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

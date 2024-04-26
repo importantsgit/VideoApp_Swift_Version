@@ -9,10 +9,23 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    var button = ImageButton(image: .init(defaultName: "tagLive"))
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupLayout()
+        
     }
 
+}
+extension MainViewController {
+    private func setupLayout() {
+        button.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(button)
+        
+        button
+            .add(to: &view, centerX: true, centerY: true)
+            .setSize(40)
+    }
 }
 
