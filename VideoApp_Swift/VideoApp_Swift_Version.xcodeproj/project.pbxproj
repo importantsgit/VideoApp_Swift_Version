@@ -18,6 +18,7 @@
 		7B82A01E2BDB39C50029FF44 /* BrightnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01D2BDB39C50029FF44 /* BrightnessController.swift */; };
 		7B82A0202BDB39E30029FF44 /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01F2BDB39E30029FF44 /* VolumeController.swift */; };
 		7B82A0232BDB3B2C0029FF44 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A0222BDB3B2C0029FF44 /* PlayerViewController.swift */; };
+		7B82A0272BDB40EF0029FF44 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A0262BDB40EF0029FF44 /* UIColor+Extension.swift */; };
 		7B968A9F2BDA368700B0D755 /* PlayerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */; };
 		7B968AA12BDA36F800B0D755 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA02BDA36F800B0D755 /* PlayerView.swift */; };
 		7B968AA52BDA38E800B0D755 /* BaseControlContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */; };
@@ -48,6 +49,7 @@
 		7B82A01D2BDB39C50029FF44 /* BrightnessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessController.swift; sourceTree = "<group>"; };
 		7B82A01F2BDB39E30029FF44 /* VolumeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeController.swift; sourceTree = "<group>"; };
 		7B82A0222BDB3B2C0029FF44 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		7B82A0262BDB40EF0029FF44 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLayout.swift; sourceTree = "<group>"; };
 		7B968AA02BDA36F800B0D755 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControlContainerView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				7BC2FF102B44DE2F00CBEBDD /* UIView+Extension.swift */,
 				7BC2FF122B44E24400CBEBDD /* CMTime+Extension.swift */,
 				7BC2FF152B44E28E00CBEBDD /* AVPlayer+Extension.swift */,
+				7B82A0262BDB40EF0029FF44 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				7B968AAF2BDA3A7A00B0D755 /* PortraitController.swift in Sources */,
 				7BC2FEF02B44DBBA00CBEBDD /* SceneDelegate.swift in Sources */,
 				7BC2FF082B44DD0300CBEBDD /* PlayerEvent.swift in Sources */,
+				7B82A0272BDB40EF0029FF44 /* UIColor+Extension.swift in Sources */,
 				7B82A0192BDB39230029FF44 /* PortraitAudioModeController.swift in Sources */,
 				7BC2FF162B44E28E00CBEBDD /* AVPlayer+Extension.swift in Sources */,
 			);
