@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIView {
-    
     /** 뷰를 돌리는 함수 */
     func rotate(angle: CGFloat) {
         let radians = angle / 180.0 * CGFloat.pi
@@ -18,7 +17,6 @@ extension UIView {
 }
 
 extension UILabel {
-    
     /** 줄 간격을 주는 함수 */
     func setTextWithLineHeight(text: String?, lineHeight: CGFloat) {
         if let text = text {

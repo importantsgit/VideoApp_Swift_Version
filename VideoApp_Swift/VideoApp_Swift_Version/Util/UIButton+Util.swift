@@ -7,7 +7,27 @@
 
 import UIKit
 
-class PlayerButton: UIButton {
+struct ButtonImage {
+    var defaultName: String
+    var selectedName: String
+    var padding: CGFloat
+    
+    init(
+        defaultName: String,
+        selectedName: String? = nil,
+        padding: CGFloat = 0
+    ) {
+        self.defaultName = defaultName
+        self.selectedName = selectedName ?? defaultName
+        self.padding = padding
+    }
+}
+
+@available (iOS 15.0, *)
+class ImageButton: UIButton {
+
+    private var buttonImage: ButtonImage?
+    private var title: String?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -17,11 +37,32 @@ class PlayerButton: UIButton {
         super.init(coder: coder)
     }
     
-    public func setupImages(image: UIImage, padding: CGFloat) {
+    convenience init(
+        image: ButtonImage
+    ) {
+        self.init(frame: .zero)
+        self.buttonImage = image
+        
+        setButtonUpdateHandler()
+    }
+
+    private func setupButtonImage(_ state: UIControl.State) -> UIButton.Configuration? {
+        guard let buttonImage = buttonImage 
+        else { return nil }
+        
         var config = UIButton.Configuration.plain()
-        config.image = image
-        config.imagePadding = padding
+        config.image = UIImage(named: state == .normal ? buttonImage.defaultName : buttonImage.selectedName)
+        config.imagePadding = buttonImage.padding
         config.imagePlacement = .all
-        self.configuration = config
+        
+        return config
+    }
+    
+    public func setButtonUpdateHandler() {
+        self.configurationUpdateHandler = {
+            guard let configration = self.setupButtonImage($0.state)
+            else { return }
+            $0.configuration = configration
+        }
     }
 }
