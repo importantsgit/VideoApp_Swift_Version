@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B82A00C2BDB35490029FF44 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A00B2BDB35490029FF44 /* RxBlocking */; };
+		7B82A00E2BDB35490029FF44 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A00D2BDB35490029FF44 /* RxCocoa */; };
+		7B82A0102BDB35490029FF44 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A00F2BDB35490029FF44 /* RxRelay */; };
+		7B82A0122BDB35490029FF44 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A0112BDB35490029FF44 /* RxSwift */; };
+		7B82A0142BDB35490029FF44 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 7B82A0132BDB35490029FF44 /* RxTest */; };
+		7B82A0162BDB35C00029FF44 /* PlayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A0152BDB35C00029FF44 /* PlayInfo.swift */; };
+		7B82A0192BDB39230029FF44 /* PortraitAudioModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A0182BDB39230029FF44 /* PortraitAudioModeController.swift */; };
+		7B82A01C2BDB39640029FF44 /* LandscapeAudioModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01B2BDB39640029FF44 /* LandscapeAudioModeController.swift */; };
+		7B82A01E2BDB39C50029FF44 /* BrightnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01D2BDB39C50029FF44 /* BrightnessController.swift */; };
+		7B82A0202BDB39E30029FF44 /* VolumeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B82A01F2BDB39E30029FF44 /* VolumeController.swift */; };
 		7B968A9F2BDA368700B0D755 /* PlayerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */; };
 		7B968AA12BDA36F800B0D755 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA02BDA36F800B0D755 /* PlayerView.swift */; };
 		7B968AA52BDA38E800B0D755 /* BaseControlContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */; };
@@ -31,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B82A0152BDB35C00029FF44 /* PlayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayInfo.swift; sourceTree = "<group>"; };
+		7B82A0182BDB39230029FF44 /* PortraitAudioModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitAudioModeController.swift; sourceTree = "<group>"; };
+		7B82A01B2BDB39640029FF44 /* LandscapeAudioModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeAudioModeController.swift; sourceTree = "<group>"; };
+		7B82A01D2BDB39C50029FF44 /* BrightnessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessController.swift; sourceTree = "<group>"; };
+		7B82A01F2BDB39E30029FF44 /* VolumeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeController.swift; sourceTree = "<group>"; };
 		7B968A9E2BDA368700B0D755 /* PlayerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLayout.swift; sourceTree = "<group>"; };
 		7B968AA02BDA36F800B0D755 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		7B968AA42BDA38E800B0D755 /* BaseControlContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControlContainerView.swift; sourceTree = "<group>"; };
@@ -61,12 +76,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B82A0142BDB35490029FF44 /* RxTest in Frameworks */,
+				7B82A0102BDB35490029FF44 /* RxRelay in Frameworks */,
+				7B82A00E2BDB35490029FF44 /* RxCocoa in Frameworks */,
+				7B82A0122BDB35490029FF44 /* RxSwift in Frameworks */,
+				7B82A00C2BDB35490029FF44 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B82A0172BDB38FD0029FF44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B968AAE2BDA3A7A00B0D755 /* PortraitController.swift */,
+				7B82A0182BDB39230029FF44 /* PortraitAudioModeController.swift */,
+				7B82A01D2BDB39C50029FF44 /* BrightnessController.swift */,
+				7B82A01F2BDB39E30029FF44 /* VolumeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B82A01A2BDB393D0029FF44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B968AB02BDA3A8600B0D755 /* LandscapeController.swift */,
+				7B82A01B2BDB39640029FF44 /* LandscapeAudioModeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		7B968A9B2BDA32A600B0D755 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				7B968AA62BDA397000B0D755 /* LandscapeControlContainer.swift */,
-				7B968AB02BDA3A8600B0D755 /* LandscapeController.swift */,
+				7B82A01A2BDB393D0029FF44 /* Controller */,
 			);
 			path = Landscape;
 			sourceTree = "<group>";
@@ -128,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				7B968AA82BDA398200B0D755 /* PortraitControlContainer.swift */,
-				7B968AAE2BDA3A7A00B0D755 /* PortraitController.swift */,
+				7B82A0172BDB38FD0029FF44 /* Controller */,
 			);
 			path = Portrait;
 			sourceTree = "<group>";
@@ -210,6 +250,7 @@
 		7BC2FF062B44DCF100CBEBDD /* Player */ = {
 			isa = PBXGroup;
 			children = (
+				7B82A0152BDB35C00029FF44 /* PlayInfo.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -272,6 +313,13 @@
 			dependencies = (
 			);
 			name = VideoApp_Swift_Version;
+			packageProductDependencies = (
+				7B82A00B2BDB35490029FF44 /* RxBlocking */,
+				7B82A00D2BDB35490029FF44 /* RxCocoa */,
+				7B82A00F2BDB35490029FF44 /* RxRelay */,
+				7B82A0112BDB35490029FF44 /* RxSwift */,
+				7B82A0132BDB35490029FF44 /* RxTest */,
+			);
 			productName = VideoApp_Swift_Version;
 			productReference = 7BC2FEEA2B44DBBA00CBEBDD /* VideoApp_Swift_Version.app */;
 			productType = "com.apple.product-type.application";
@@ -300,6 +348,9 @@
 				Base,
 			);
 			mainGroup = 7BC2FEE12B44DBBA00CBEBDD;
+			packageReferences = (
+				7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 7BC2FEEB2B44DBBA00CBEBDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -331,6 +382,7 @@
 				7BC2FF112B44DE2F00CBEBDD /* UIView+Extension.swift in Sources */,
 				7BC2FF1A2B44E35000CBEBDD /* PlayerInterface.swift in Sources */,
 				7B968AA92BDA398200B0D755 /* PortraitControlContainer.swift in Sources */,
+				7B82A01C2BDB39640029FF44 /* LandscapeAudioModeController.swift in Sources */,
 				7B968AA52BDA38E800B0D755 /* BaseControlContainerView.swift in Sources */,
 				7B968AA12BDA36F800B0D755 /* PlayerView.swift in Sources */,
 				7B968A9F2BDA368700B0D755 /* PlayerLayout.swift in Sources */,
@@ -338,12 +390,16 @@
 				7B968AA72BDA397000B0D755 /* LandscapeControlContainer.swift in Sources */,
 				7BC2FEF22B44DBBA00CBEBDD /* ViewController.swift in Sources */,
 				7B968AB32BDA3AA400B0D755 /* BaseController.swift in Sources */,
+				7B82A0202BDB39E30029FF44 /* VolumeController.swift in Sources */,
 				7BC2FEEE2B44DBBA00CBEBDD /* AppDelegate.swift in Sources */,
 				7BC2FF0F2B44DDFA00CBEBDD /* UIButton+Util.swift in Sources */,
 				7BC2FF132B44E24400CBEBDD /* CMTime+Extension.swift in Sources */,
+				7B82A0162BDB35C00029FF44 /* PlayInfo.swift in Sources */,
+				7B82A01E2BDB39C50029FF44 /* BrightnessController.swift in Sources */,
 				7B968AAF2BDA3A7A00B0D755 /* PortraitController.swift in Sources */,
 				7BC2FEF02B44DBBA00CBEBDD /* SceneDelegate.swift in Sources */,
 				7BC2FF082B44DD0300CBEBDD /* PlayerEvent.swift in Sources */,
+				7B82A0192BDB39230029FF44 /* PortraitAudioModeController.swift in Sources */,
 				7BC2FF162B44E28E00CBEBDD /* AVPlayer+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +610,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B82A00B2BDB35490029FF44 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		7B82A00D2BDB35490029FF44 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		7B82A00F2BDB35490029FF44 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		7B82A0112BDB35490029FF44 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		7B82A0132BDB35490029FF44 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B82A00A2BDB35490029FF44 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BC2FEE22B44DBBA00CBEBDD /* Project object */;
 }
